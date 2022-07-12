@@ -9,8 +9,8 @@ Consiste em um sistema que auxiliará na adoção ou doação de animais em cond
 
 Para a implementação do projeto, foram utilizadas as seguintes tecnologias:
 
-#### **HTML5, CSS3, PHP e JavaScript**
-#### **JQuery** 
-### **APIs** (Correios - Informações do CEP)
-#### **Placedog e Placekitten** (APIs de imagem que simulam as fotos dos animais)
-#### **Bootstrap 4**
+#### HTML5, CSS3, PHP e JavaScript
+#### JQuery
+#### APIs (Correios - Informações do CEP)
+#### Placedog e Placekitten (APIs de imagem que simulam as fotos dos animais)
+#### Bootstrap 4
