@@ -11,6 +11,5 @@ Para a implementação do projeto, foram utilizadas as seguintes tecnologias:
 
 #### HTML5, CSS3, PHP e JavaScript
 #### JQuery
-#### APIs (Correios - Informações do CEP)
-#### Placedog e Placekitten (APIs de imagem que simulam as fotos dos animais)
+#### APIs (Correios - Informações do CEP | Placedog e Placekitten - Api que simula as fotos dos animais)
 #### Bootstrap 4
