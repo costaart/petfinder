@@ -1,0 +1,69 @@
+@font-face {
+    font-family: Comfortaa;
+    src: url(../imagens/Comfortaa-Regular.ttf);
+}
+@font-face {
+    font-family: Comfortaa-Bold;
+    src: url(../imagens/Comfortaa-Bold.ttf);
+}
+body {
+    font-family: Comfortaa !important;
+}
+canvas {
+    height: 861px !important;
+}
+.container-chart {
+    width: 100%;
+}
+.container {
+    height: 100vh;
+}
+img {
+    cursor: pointer;
+    max-width: 180px;
+    transition: ease-in-out 0.2s;
+}
+img:hover {
+   opacity: 80%;
+}
+.section-botoes {
+    margin-bottom: 0px;
+    background-color: #742d2a;
+}
+.section-chart, canvas {
+    background-color: white !important;
+}
+.btn {
+    margin-top: 10px;
+    background-color: #9e3c3a;
+    padding: 5px;
+    color: white;
+}
+.btn:hover {
+    color: white;
+    outline: solid white;
+}
+.lds-dual-ring {
+    width: 120px;
+    height: 120px;
+  }
+.lds-dual-ring:after {
+    content: " ";
+    display: block;
+    width: 64px;
+    height: 64px;
+    margin: 8px;
+    border-radius: 50%;
+    border: 6px solid #fff;
+    border-color: #fff transparent #fff transparent;
+    animation: lds-dual-ring 1.2s linear infinite;
+  }
+  @keyframes lds-dual-ring {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+  }
+  

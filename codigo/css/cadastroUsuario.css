@@ -1,0 +1,143 @@
+#logo {
+    max-width: 300px;
+    margin-top: 20px;
+}
+
+body {
+    font-family: "Karla", sans-serif;
+    background-color: #d56756;
+}
+
+h3,
+h1 {
+    font-weight: 600;
+}
+
+.modal-header {
+    background-color: #d56756;
+    color: white;
+}
+
+#fotoColuna2 {
+    max-width: 555px;
+    border-radius: 2px;
+    box-shadow: 5px 10px 15px #5a2519;
+}
+
+#botaoConsultar {
+    padding: 5px;
+    border-radius: 2px;
+    background-color: #5a2519;
+    color: #eae1c7;
+    transition: ease-out 0.2s;
+}
+
+#coluna1 {
+    background-color: #eae1c7;
+    border-width: 15px;
+    border-color: black;
+    border-radius: 3px;
+    box-shadow: 4px 4px 11px rgba(0, 0, 0, 0.466);
+}
+
+.row {
+    margin: 10px;
+}
+
+#botaoConsultar:hover {
+    transition: ease-out 0.2s;
+    background-color: #d56756;
+    padding: 10px;
+    opacity: 75%;
+}
+
+label {
+    opacity: 75%;
+}
+
+#cadastroTitulo {
+    padding-top: 20px;
+    text-align: center;
+    font-weight: 600;
+}
+
+#botaoCadastrar {
+    padding: 5px;
+    border-radius: 2px;
+    background-color: #5a2519;
+    color: #eae1c7;
+    transition: ease-out 0.2s;
+}
+
+#botaoCadastrar:hover {
+    transition: ease-out 0.2s;
+    background-color: #d56756;
+    padding: 10px;
+    opacity: 75%;
+}
+
+.textoCampos {
+    font-family: "Karla", sans-serif;
+    display: inline;
+}
+
+.row {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.camposCadastro {
+    width: 80%;
+    padding: 5px;
+    border-radius: 2px;
+    transition: ease-out 0.2s;
+}
+
+.camposCadastro:focus {
+    width: 85%;
+    background-color: rgb(229, 229, 229);
+    transition: ease-out 0.2s;
+}
+
+#tipoAbrigo {
+    width: 80%;
+}
+
+.navbar {
+    text-align: center;
+    background-color: black;
+    border-radius: 3px;
+    color: whitesmoke;
+}
+
+@media (max-width: 992px) {
+    .custom-radio label {
+        font-size: 20px;
+        margin-left: -100px;
+    }
+    #fotoColuna2 {
+        display: none;
+    }
+}
+
+@media (max-width: 1200px) {
+    #fotoColuna2 {
+        max-width: 520px;
+    }
+}
+
+@media (max-width: 768px) {
+    .custom-radio label {
+        font-size: 20px;
+        margin-left: -180px;
+        display: inline;
+    }
+}
+
+@media (max-width: 575px) {
+    .custom-radio label {
+        font-size: 20px;
+        margin-left: -100px;
+        display: inline;
+    }
+}

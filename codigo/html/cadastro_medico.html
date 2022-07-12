@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Karla:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/cadastro_medico.css">
+</head>
+<div class="container">
+    <header>
+
+    </header>
+
+    <body>
+        <!--Modal-->
+        <div class="modal" tabindex="-1" role="dialog" id="modalCadastro">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">PetFinder</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Cadastro bem sucedido!</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal"
+                            id="botaoModal">Fechar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!------->
+
+        <div class="row">
+            <div class="col-lg-6 col-md-12 col-sm-12" id="coluna-1">
+                <div class="row justify-content-center">
+                    <img src="../imagens/logo_v3.png" id="logo">
+                </div>
+                <div class="row" id="cadastroTitulo">
+                    <h1>Cadastro de voluntário</h1>
+                </div>
+                <div class="row">
+                    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #eae1c7;">
+                        <a class="navbar-brand" href="#">
+                            <img src="../imagens/pawn.png" width="30" height="30" alt="">
+                        </a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse"
+                            data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                            <div class="row">
+                                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                                    <li class="nav-item active">
+                                        <h6>
+                                            O PetFinder é extremamente grato pela sua
+                                            participação.
+                                            Juntos vamos conseguir salvar centenas de
+                                            vidas e trazer uma
+                                            vida digna para cada uma delas.
+                                        </h6>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+                <div class="form" id="campos">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-12 col-sm-12" id="coluna-1-1">
+                            <div class="row"> <label class="textoCampos">Email</label> <input type="email"
+                                    class="camposCadastro" id="campoEmail" placeholder="seuemail@email.com"> </div>
+                            <div class="row"> <label class="textoCampos">Senha</label> <input type="password"
+                                    class="camposCadastro" id="campoSenha" placeholder="Sua senha"> </div>
+                            <div class="row"> <label class="textoCampos">Nome</label> <input type="text"
+                                    class="camposCadastro" id="campoNome" placeholder="Seu nome"> </div>
+                            <div class="row"> <label class="textoCampos">Telefone</label> <input type="tel"
+                                    class="camposCadastro" id="campoTel" placeholder="(xx)xxxxx-xxxx" on> </div>
+                            <div class="row" name="camposUsuario"> <label class="textoCampos">Data de Nascimento</label>
+                                <input type="date" class="camposCadastro" id="campoNasc" placeholder="dd/mm/aa"> </div>
+                            <div class="row" name="camposUsuario"> <label class="textoCampos">CPF</label> <input
+                                    type="text" maxlength="11" class="camposCadastro" id="campoCPF"
+                                    placeholder="Seu CPF"> </div>
+                            <div class="row" name="camposUsuario"> <label class="textoCampos">Especialidade</label>
+                                <select class="camposCadastro" id="especialidade" name="camposUsuario">
+                                    <option>Selecione sua Especialidade:</option>
+                                    <option value="1">Clínico Veterinário</option>
+                                    <option value="2">Oftalmologia</option>
+                                    <option value="3">Dermatologia</option>
+                                    <option value="4">Oncologia</option>
+                                    <option value="5">Patologia</option>
+                                    <option value="6">Veterinária Intensiva</option>
+                                    <option value="7">Cirurgia e Anestesiologia</option>
+                                    <option value="8">Homeopatia</option>
+                                    <option value="9">Cardiologia</option>
+                                    <option value="10">Outro</option>
+
+                                </select>
+                            </div>
+
+
+                        </div>
+
+                        <div class="col-lg-6 col-md-12 col-sm-12" id="coluna-1-2">
+                            <div class="row"> <label class="textoCampos">CRMV</label> <input type="text"
+                                class="camposCadastro" placeholder="Seu CEP"> </div>
+                            <div class="row"> <label class="textoCampos">CEP</label> <input type="text"
+                                    class="camposCadastro" placeholder="Seu CEP" id="inputCep"> </div>
+                            <div class="row"> <input type="button" value="Consultar" id="botaoConsultar" class="btn">
+                            </div>
+                            <div id="criarElementos">
+                                <div class="row" id="row1"></div>
+                                <div class="row" id="row2"></div>
+                                <div class="row" id="row3"></div>
+                            </div>
+                            <div class="row"> <input type="button" class="btn" value="Cadastrar" id="botaoCadastrar">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-6 col-md-6 col-sm-12">
+                <img src="../imagens/imagem_cadastro_medico.jpg" id="fotoColuna2">
+            </div>
+
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js%22%3E"></script>
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+        <script src="../javascript/cadastro_medico.js"></script>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+            crossorigin="anonymous"></script>
+    </body>
+    <footer>
+
+    </footer>
+</div>

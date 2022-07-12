@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Karla:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/marcar_consulta.css">
+    <script src="../javascript/marcar_consulta.js"></script>
+</head>
+<div class="container">
+    <header>
+
+    </header>
+
+    <body>
+        <!--Modal-->
+        <div class="modal" tabindex="-1" role="dialog" id="modalCadastro">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">PetFinder</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Cadastro bem sucedido!</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal"
+                            id="botaoModal">Fechar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!------->
+
+        <div class="row">
+            <div class="col-lg-6 col-md-12 col-sm-12" id="coluna-1">
+                <div class="row justify-content-center">
+                    <img src="../imagens/logo_v3.png" id="logo">
+                </div>
+                <div class="row" id="cadastroTitulo">
+                    <h1>Marcar consulta</h1>
+                </div>
+                <div class="row">
+                    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #eae1c7;">
+                        <a class="navbar-brand" href="#">
+                            <img src="../imagens/pawn.png" width="30" height="30" alt="">
+                        </a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse"
+                            data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                            <div class="row">
+                                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                                    <li class="nav-item active">
+                                        <h6 style="margin: auto;">
+                                            Agende uma consulta veterinária gratuita com o Petfinder!
+                                        </h6>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+                <div class="form" id="campos">
+                    <div class="row" name="camposUsuario"> <label class="textoCampos" style="text-align: center;">Localização</label>
+                        <select class="camposCadastro localizacao" id="localizacao" name="camposUsuario">
+                            <option>Selecione sua cidade:</option>
+                            <option value="1">Belo Horizonte</option>
+                            <option value="2">Contagem</option>
+                            <option value="3">Sabará</option>
+    
+                        </select>
+                    </div>
+
+                    <div class="row" id="outrasOpcoes">
+                        <div class="col-lg-6 col-md-12 col-sm-12" id="coluna-1-1">
+
+                            <div id="criarElementos">
+                                <div class="row" name="camposUsuario"> <label class="textoCampos">Especialidade</label>
+                                    <select class="camposCadastro especialidade" id="especialidade" name="camposUsuario">
+                                        <option>Selecione a especialidade:</option>
+                                        <option value="1">Clínico Veterinário</option>
+                                        <option value="2">Oftalmologia</option>
+                                        <option value="3">Dermatologia</option>
+                                        <option value="4">Oncologia</option>
+                                        <option value="5">Patologia</option>
+                                        <option value="6">Veterinária Intensiva</option>
+                                        <option value="7">Cirurgia e Anestesiologia</option>
+                                        <option value="8">Homeopatia</option>
+                                        <option value="9">Cardiologia</option>
+                                        <option value="10">Outro</option>
+                
+                                    </select>
+                                </div>
+                                
+                                <div class="row" name="camposUsuario"> <label class="textoCampos">Tipo do animal</label>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="tipoAnimal" id="tipoCachorro" value="cachorro">
+                                        <label class="form-check-label" for="tipoCachorro">Cachorro</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="tipoAnimal" id="tipoGato" value="gato">
+                                        <label class="form-check-label" for="tipoGato">Gato</label>
+                                    </div>
+                                </div>
+
+                                <div class="row" name="camposUsuario"> <label class="textoCampos">Porte do animal</label>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="porteAnimal" id="portePequeno" value="pequeno">
+                                        <label class="form-check-label" for="portePequeno">Pequeno</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="porteAnimal" id="porteMedio" value="medio">
+                                        <label class="form-check-label" for="porteMedio">Médio</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="porteAnimal" id="porteGrande" value="grande">
+                                        <label class="form-check-label" for="porteGrande">Grande</label>
+                                    </div>
+                                </div>
+
+                                
+                            </div>
+
+
+                        </div>
+
+                        <div class="col-lg-6 col-md-12 col-sm-12" id="coluna-1-2">
+                            <div class="row" name="camposUsuario"> <label class="textoCampos">Horários disponíveis</label>
+                                <select class="camposCadastro horarios" id="horarios" name="camposUsuario">
+                                    <option>Selecione um horário:</option>
+                                    <option value="1">10/06 - 14h</option>
+                                    <option value="2">11/06 - 15h</option>
+                                    <option value="3">14/06 - 09h</option>
+            
+                                </select>
+                            </div>
+
+                            <div class="row" name="camposUsuario"> <label class="textoCampos">Idade do animal</label>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="idadeAnimal" id="idadeFilhote" value="option1">
+                                    <label class="form-check-label" for="idadeFilhote">Filhote</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="idadeAnimal" id="idadeAdulto" value="option2">
+                                    <label class="form-check-label" for="idadeAdulto">Adulto</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="idadeAnimal" id="idadeIdoso" value="option3">
+                                    <label class="form-check-label" for="idadeIdoso">Idoso</label>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="row">
+                            <div class="form-group">
+                                <label for="descricaoConsulta">Dê mais detalhes sobre a consulta</label>
+                                <textarea class="form-control" id="descricaoConsulta" rows="4"></textarea>
+                            </div>
+                        </div>
+                        <div class="row"> <input type="button" class="btn" value="Marcar Consulta" id="botaoCadastrar">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="col-lg-6 col-md-6 col-sm-12">
+                <img src="../imagens/imagem_marcar_consulta.jpg" id="fotoColuna2">
+            </div>
+
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js%22%3E"></script>
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+            crossorigin="anonymous"></script>
+    </body>
+    <footer>
+
+    </footer>
+</div>

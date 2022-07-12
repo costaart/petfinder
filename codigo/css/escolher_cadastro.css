@@ -1,0 +1,41 @@
+@font-face {
+    font-family: Comfortaa;
+    src: url(../imagens/Comfortaa-Regular.ttf);
+}
+@font-face {
+    font-family: Comfortaa-Bold;
+    src: url(../imagens/Comfortaa-Bold.ttf);
+}
+
+body {
+    font-family: Comfortaa !important;
+    background-color: #742d2a;
+}
+img {
+    cursor: pointer;
+    max-width: 300px;
+}
+.field {
+    padding: 5px;
+    color: white;
+    text-align: center;
+}
+.field h1 {
+    font-size: 40px;
+}
+.section-escolher-cadastro {
+    display: none;
+    margin-top: 100px;
+}
+.btn {
+    color: white;
+    background-color: #9e3c3a;
+    border: none;
+    padding: 10px;
+    transition: ease-in-out 0.3s;
+}
+.btn:hover {
+    color: white;
+    outline: solid white;
+    background-color: #a45453;
+}

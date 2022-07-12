@@ -1,0 +1,122 @@
+#logo {
+    max-width: 300px;
+    margin-top: 20px;
+    
+}
+body  {
+    font-family: "Karla", sans-serif;
+    background-color: #eae1c7;
+    
+}
+label {
+    color: white;
+}
+
+ h3, h1 {
+    font-weight: 600;
+    color: white;
+}
+
+.modal-header {
+    background-color: #d56756;
+    color: white;
+}
+#fotoColuna2 {
+    max-width: 655px;
+    opacity: 85%;
+    border-radius: 2px;
+    box-shadow: 5px 10px 15px #676767;
+}
+
+#coluna-1 {
+    background-color: #d56756;
+    border-width: 15px;
+    border-color: black;
+    border-radius: 3px;
+    box-shadow: 4px 4px 11px rgba(0, 0, 0, 0.466);
+
+}
+
+.row {
+    margin: 10px;
+}
+
+
+label {
+    opacity: 75%;
+}
+#cadastroTitulo{
+    padding-top: 20px;
+    text-align: center;
+    font-weight: 600;
+}
+.btn {
+    padding: 5px;
+    border-radius: 2px;
+    background-color: #5a2519;
+    color: #ffffff;
+    transition: ease-out 0.2s;
+    width: 80%;
+}
+#botaoModal {
+    width: 30%;
+}
+.coluna-1-2 {
+    display: inline;
+}
+.btn:hover {
+    transition: ease-out 0.2s;
+    background-color: #eae1c7;
+    padding: 10px;
+    opacity: 75%;
+    color: black;
+}
+
+.textoCampos {  
+    
+    font-family: "Karla", sans-serif;
+    display: inline;
+}
+
+.row  {
+    margin-left: auto;
+    margin-right: auto;
+}
+.camposCadastro {
+    width: 80%;
+    padding: 5px;
+    border-radius: 2px;
+    transition: ease-out 0.2s;
+
+}
+.camposCadastro:focus {
+    width: 85%;
+    background-color: rgb(229, 229, 229);
+    transition: ease-out 0.2s;
+}
+#tipoAbrigo {
+    width: 80%;
+}
+.navbar {
+    text-align: center;
+    background-color: black;
+    border-radius: 3px;
+    color: rgb(0, 0, 0);
+    background-color: black;
+}
+
+
+@media (max-width: 992px)
+{
+  #fotoColuna2 {
+      display: none;
+  }
+}
+@media (max-width: 1200px)
+{
+ 
+  #fotoColuna2 {
+      max-width: 520px;
+  }
+}
+

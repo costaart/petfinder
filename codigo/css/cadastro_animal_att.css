@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@200&display=swap');
+
+label, input {
+    vertical-align: middle;
+}
+h1 {
+    font-family: 'Karla', sans-serif;
+    font-weight: bolder;
+}
+.row {
+    padding: 5px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.container {
+    background-color: #9e3d3a;
+}
+.container-right img {
+    border-radius: 5px;
+    opacity: 90%;
+    max-width: 685px;
+}
+.container-left {
+    justify-items: center;
+    transition: ease-in-out 0.3s;
+    border-radius: 3px;
+    position: relative;
+}
+.container-left:hover .underline-logo::before {
+    transform: scaleX(1);
+}
+.container-left:hover h2::after {
+    transform: scaleX(1);
+}
+.container-left:hover {
+    box-shadow: 9px 10px 16px -9px rgba(0,0,0,0.91);
+}
+
+#label_foto_animal:hover {
+    cursor: pointer;
+}
+
+.input-field-logo {
+    position: relative;
+}
+.input-field-logo h2 {
+    font-size: 40px;  
+    color: #e8e1c6;
+    font-family: 'Karla', sans-serif;
+    font-weight: bolder;
+    margin-bottom: -10px;
+    text-align: center;
+}
+.input-field-logo .underline-logo::before {
+    content: '';
+    position: absolute;
+    width: 157px;
+    height: 2px;
+    margin: 10px auto 10px auto;
+    left: 0px;
+    right: 20px;
+    margin: 10p;
+    background-color: #e8e1c6;
+    transform: scaleX(0);
+    transition: ease-in-out 0.3s;
+}
+.input-field-logo h2:after{  
+    content: "";
+    margin: 10px auto 10px auto;
+    display: block;
+    width: 297px;
+    height: 2px;
+    transition: ease-in-out 0.3s;
+    background: #e8e1c6;
+}
+
+.input-field label {
+    font-family: 'Karla', sans-serif;
+    font-weight: 600;
+    color: white;
+}
+.input-field #label_foto_animal {
+    width: 170px;
+    margin-left: 0px;
+    margin-right: 40px;
+    padding: 5px;
+    border-radius: 5px;
+    margin-bottom: 0px;
+    background-color: white;
+    color: rgb(104, 104, 104);
+}
+.input-foto-animal {
+    width: 100%;
+}
+
+.input-field input, textarea {
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    width: 80%;
+    transition: ease-in-out 0.3s;
+}
+.input-field select {
+    width: 80%;
+    border-radius: 7px;
+    padding: 3px;
+    
+}
+
+.btn {
+    font-family: 'Karla', sans-serif;
+    font-weight: 700;
+    background-color: #e8e1c6;
+    color: black;
+    margin-top: 40px;
+    width: 20%;
+    transition: ease-in-out 0.3s;
+}
+
+.btn-cadastro-validado {
+    background-color: transparent;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #9e3d3a;
+    width: 100px;
+    padding: 7px;
+    transition: ease-in-out 0.2s;
+}
+.btn-cadastro-validado:hover {
+    width: 110px;
+    border-color: white;
+}
+
+.btn:hover {
+    width: 30%;
+    padding: 8px;
+    box-shadow:  2px 1px 14px 4px rgba(0,0,0,0.38);
+}
+
+.input-field input:focus {
+    width: 90%;
+}
+
+.cadastro-validado-text i {
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+#logo {
+    max-width: 300px;
+    margin-top: 20px; 
+    transition: ease-in-out 0.3s;
+}
+
+
+input[type='file'] {
+    display: none;
+}
+
+@media (max-width: 992px) {
+    .container-right img {
+        display: none;
+    }
+    .input-field {
+        width: 100%;
+    }
+
+}
+@media (max-width: 576) {
+   
+}
