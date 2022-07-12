@@ -33,3 +33,4 @@ Caso o usuário seja um voluntário:
 
 ### Login
 Tela do Login. É por ela que o usuário se conecta na sua conta cadastrada.
+![Tela Login](imagens/login.jpg "Foto representando a Tela de Login do PetFinder.")
